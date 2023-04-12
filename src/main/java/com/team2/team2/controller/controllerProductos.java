@@ -23,4 +23,42 @@ public class controllerProductos {
         return producto;
     }
 
+    @RequestMapping(value = "/{categoria}",method = RequestMethod.GET,produces="application/json")
+
+    public @ResponseBody Producto findBycategoria (@PathVariable String categoria) {
+
+        Producto producto= new Producto(1,"zapatos","zapato de cuero",1,23000,"","2015-03-31","2015-03-31","agotado");
+
+
+        return producto;
+    }
+
+    @RequestMapping(value = "/all",method = RequestMethod.POST,produces="application/json")
+
+    public @ResponseBody Producto findByall () {
+
+        Producto producto= new Producto(1,"zapatos","zapato de cuero",1,23000,"","2015-03-31","2015-03-31","agotado");
+
+
+        return producto;
+    }
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.GET,produces="application/json")
+
+    public @ResponseBody Producto deleteById (@PathVariable long id) {
+
+        Producto producto= new Producto(1,"zapatos","zapato de cuero",1,23000,"","2015-03-31","2015-03-31","agotado");
+
+
+        return producto;
+    }
+    @RequestMapping(value = "/edit/{id}",method = RequestMethod.GET,produces="application/json")
+
+    public @ResponseBody Producto editById (@PathVariable long id) {
+
+        Producto producto= new Producto(1,"zapatos","zapato de cuero",1,23000,"","2015-03-31","2015-03-31","agotado");
+
+
+        return producto;
+    }
+
 }
