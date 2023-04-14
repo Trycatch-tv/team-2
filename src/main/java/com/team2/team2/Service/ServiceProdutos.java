@@ -5,6 +5,8 @@ import com.team2.team2.repositories.InterfazBaseproductos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ServiceProdutos implements InterfazServiceProdutos {
     @Autowired
@@ -14,5 +16,10 @@ public class ServiceProdutos implements InterfazServiceProdutos {
 
         Producto producto= interfazBaseproductos.findByid(id);
         return producto;
+    }
+    public List<Producto> findAll( ){
+        List<Producto> listdeproducto=interfazBaseproductos.findAll();
+
+        return listdeproducto;
     }
 }
