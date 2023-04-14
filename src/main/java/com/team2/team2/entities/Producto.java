@@ -1,22 +1,38 @@
 package com.team2.team2.entities;
 
+import jakarta.persistence.*;
+
 import java.sql.Date;
-
+//(BD)@Entity :CREA LA TABLA (Department) EN BASE EN LA CLASE  (Department)
+@Entity
+//@Table:CREO LA ENTIDAD (Department) EN LA BASE DE DATOS
+@Table(name="Producto")
 public class Producto {
-
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO )
+    private Long id;
+    //@Column crea la columna nombre
+    @Column(name = "nombre")
     private String nombre;
+    //@Column crea la columna nombre
+    @Column(name = "descripcion")
     private String descripcion;
+    @Column(name = "cantidad")
     private long cantidad;
+    @Column(name = "precio")
     private long precio;
+    @Column(name = "imagen")
     private String imagen;
+    @Column(name = "fechaCreacion")
     private String fechaCreacion;
+    @Column(name = "fechaModificacion")
     private String fechaModificacion;
+    @Column(name = "estado")
     private String estado;
 
     public Producto(){};
 
-    public Producto(int id, String nombre, String descripcion, long cantidad, long precio, String imagen, String fechaCreacion, String fechaModificacion, String estado) {
+    public Producto(long id, String nombre, String descripcion, long cantidad, long precio, String imagen, String fechaCreacion, String fechaModificacion, String estado) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -28,11 +44,11 @@ public class Producto {
         this.estado = estado;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
