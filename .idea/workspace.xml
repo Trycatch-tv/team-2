@@ -10,10 +10,7 @@
       <change afterPath="$USER_HOME$/Downloads/team2/.idea/team2.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/IdeaProjects/ejemplo/ejemplo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceProdutos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProdutos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseproductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseproductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
