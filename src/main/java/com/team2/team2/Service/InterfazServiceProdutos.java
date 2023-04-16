@@ -10,4 +10,8 @@ public interface InterfazServiceProdutos {
 
 
     public List<Producto> findAll();
+
+    public void Delete (long id);
+
+    void save(Producto producto);
 }

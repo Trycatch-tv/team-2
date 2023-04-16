@@ -4,6 +4,7 @@ package com.team2.team2.controller;
 import com.team2.team2.Service.InterfazServiceProdutos;
 import com.team2.team2.entities.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,7 +23,7 @@ public class controllerProductos {
 
     public @ResponseBody Producto findById (@PathVariable long id) {
 
-        return interfazServiceProdutos.finbyid(id);
+        return this.interfazServiceProdutos.finbyid(id);
     }
     @RequestMapping(value = "/all",method = RequestMethod.GET,produces="application/json")
 
@@ -30,5 +31,19 @@ public class controllerProductos {
         List<Producto> listaProductos=this.interfazServiceProdutos.findAll();
         return listaProductos;
     }
+
+    @RequestMapping(value = "/delete/{id}",method = RequestMethod.GET,produces="application/json")
+    public @ResponseBody void findByIdEdit (@PathVariable long id) {
+        this.interfazServiceProdutos.Delete(id);
+    }
+
+    @RequestMapping(value = "/save",method = RequestMethod.POST,produces="application/json")
+    public @ResponseBody void save (@RequestBody Producto producto) {
+
+        System.out.printf("_______"+producto.getNombre());
+        System.out.printf("_______");
+        this.interfazServiceProdutos.save(producto);
+    }
+
 
 }

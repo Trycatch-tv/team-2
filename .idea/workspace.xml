@@ -7,10 +7,24 @@
     <list default="true" id="985c0352-aff8-4ac2-b3cb-2c615c66a73c" name="Changes" comment="">
       <change afterPath="$USER_HOME$/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/clone/clone.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/encoding/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerCategoria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Categoria.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/demo (1)/demo (1)/demo/src/main/java/com/example/demo/entities/Categoria.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/Downloads/demo (1)/demo (1)/demo/src/main/java/com/example/demo/entities/Marca.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/team2/.idea/team2.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/IdeaProjects/ejemplo/ejemplo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceProdutos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProdutos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseproductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseproductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/Service/InterfazServiceProdutos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/Service/InterfazServiceProdutos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/Service/ServiceProdutos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/Service/ServiceProdutos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/controller/controllerProductos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/controller/controllerProductos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/entities/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/entities/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/repositories/InterfazBaseproductos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/repositories/InterfazBaseproductos.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,20 +80,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Usuario/Desktop/team2",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Desktop/team2&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Downloads\team2" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.team2.team2.entities" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

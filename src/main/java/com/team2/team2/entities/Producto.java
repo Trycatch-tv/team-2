@@ -29,6 +29,19 @@ public class Producto {
     private String fechaModificacion;
     @Column(name = "estado")
     private String estado;
+    //SECCION 3________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
+
+
+    //ManyToOne: DEFINICION  Many: muchas facturas (la clase facturas)
+    //ManyToOne: DEFINICION  One: un Usuario (la variable Users)
+    @ManyToOne
+    //COLUMNA LLAVE FORANES (FK)
+    @JoinColumn(name = "Producto_Categoria")
+    //UNIDO AL OBJETO Users que es una entidad
+    private Categoria categoria;
+
+    //SECCION 4__________________________________________CONTRUCTOR_______________________________________________________________
+
 
     public Producto(){};
 
