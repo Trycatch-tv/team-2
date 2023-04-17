@@ -1,6 +1,9 @@
 package com.team2.team2.Service;
 
+import com.team2.team2.entities.Categoria;
+import com.team2.team2.entities.Marca;
 import com.team2.team2.entities.Producto;
+import com.team2.team2.entities.UnidadMedida;
 import com.team2.team2.repositories.InterfazBaseproductos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +18,10 @@ public class ServiceProdutos implements InterfazServiceProdutos {
         //Producto producto= new Producto(1,"zapatos","zapato de cuero",1,23000,"","2015-03-31","2015-03-31","agotado");
         Producto producto= this.interfazBaseproductos.findByid(id);
         if (producto== null){
-            Producto producto1 = new Producto();
+            UnidadMedida unidadMedida= new UnidadMedida(0,0,"","");
+            Marca marca1= new Marca(0,"","");
+            Categoria categoria1= new Categoria(0,0,"","","","");
+            Producto producto1= new Producto(0,"no encontrado","",0,0,"","","","",categoria1,marca1,unidadMedida);
             return producto1;
         }else{
             return producto;

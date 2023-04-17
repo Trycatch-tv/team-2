@@ -1,8 +1,10 @@
 package com.team2.team2.controller;
 
-
 import com.team2.team2.Service.InterfazServiceCategoria;
+import com.team2.team2.Service.InterfazServiceMarca;
+import com.team2.team2.Service.InterfazServiceProdutos;
 import com.team2.team2.entities.Categoria;
+import com.team2.team2.entities.Marca;
 import com.team2.team2.entities.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -12,32 +14,32 @@ import java.util.List;
 @RestController
 
 //@RequestMapping: define le URL donde se hara la peticion (http://localhost:8080/productos"/(end poit al que deseo ingresar))
-@RequestMapping("categorias")
-public class controllerCategoria {
-    //_____________________________________________SERVICIOS________________________________________
-    ////@Autowired: TRAE INTERFAZ DEL IserviceUsers  (BASE DE DATOS) y pordebajo toda la logica de ImpleServicesUsers
+@RequestMapping("marca")
+public class controllerMarca {
     @Autowired
-    private InterfazServiceCategoria interfazServiceCategoria;
+    private InterfazServiceMarca interfazServiceMarca;
 
     @RequestMapping(value = "/{id}",method = RequestMethod.GET,produces="application/json")
 
-    public @ResponseBody Categoria findById (@PathVariable long id) {
+    public @ResponseBody Marca findById (@PathVariable long id) {
 
-        return this.interfazServiceCategoria.finbyid(id);
+        return this.interfazServiceMarca.finbyid(id);
     }
     @RequestMapping(value = "/all",method = RequestMethod.GET,produces="application/json")
 
-    public @ResponseBody List<Categoria> findAll () {
-        List<Categoria> listaProductos=this.interfazServiceCategoria.findAll();
-        return listaProductos;
+    public @ResponseBody List<Marca> findAll () {
+        List<Marca> listaMarca=this.interfazServiceMarca.findAll();
+        return listaMarca;
     }
     @RequestMapping(value = "/delete/{id}",method = RequestMethod.GET,produces="application/json")
     public @ResponseBody void findByIdEdit (@PathVariable long id) {
-        this.interfazServiceCategoria.Delete(id);
+        this.interfazServiceMarca.Delete(id);
     }
     @RequestMapping(value = "/save",method = RequestMethod.POST,produces="application/json")
-    public @ResponseBody void save (@RequestBody Categoria categoria) {
+    public @ResponseBody void save (@RequestBody Marca marca) {
 
-        this.interfazServiceCategoria.save(categoria);
+        this.interfazServiceMarca.save(marca);
     }
+
+
 }

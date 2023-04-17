@@ -10,7 +10,7 @@ import java.sql.Date;
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO )
-    private Long id;
+    private long id;
     //@Column crea la columna nombre
     @Column(name = "nombre")
     private String nombre;
@@ -29,7 +29,7 @@ public class Producto {
     private String fechaModificacion;
     @Column(name = "estado")
     private String estado;
-    //SECCION 3________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
+    //SECCION 3.1________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
 
 
     //ManyToOne: DEFINICION  Many: muchas facturas (la clase facturas)
@@ -40,12 +40,34 @@ public class Producto {
     //UNIDO AL OBJETO Users que es una entidad
     private Categoria categoria;
 
+    //SECCION 3.2________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
+
+
+    //ManyToOne: DEFINICION  Many: muchas facturas (la clase facturas)
+    //ManyToOne: DEFINICION  One: un Usuario (la variable Users)
+    @ManyToOne
+    //COLUMNA LLAVE FORANES (FK)
+    @JoinColumn(name = "Producto_Marca")
+    //UNIDO AL OBJETO Users que es una entidad
+    private Marca marca;
+
+    //SECCION 3.2________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
+
+
+    //ManyToOne: DEFINICION  Many: muchas facturas (la clase facturas)
+    //ManyToOne: DEFINICION  One: un Usuario (la variable Users)
+    @ManyToOne
+    //COLUMNA LLAVE FORANES (FK)
+    @JoinColumn(name = "Producto_Unidad")
+    //UNIDO AL OBJETO Users que es una entidad
+    private UnidadMedida unidadMedida;
+
     //SECCION 4__________________________________________CONTRUCTOR_______________________________________________________________
 
 
     public Producto(){};
 
-    public Producto(long id, String nombre, String descripcion, long cantidad, long precio, String imagen, String fechaCreacion, String fechaModificacion, String estado) {
+    public Producto(long id, String nombre, String descripcion, long cantidad, long precio, String imagen, String fechaCreacion, String fechaModificacion, String estado, Categoria categoria, Marca marca, UnidadMedida unidadMedida) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -55,6 +77,9 @@ public class Producto {
         this.fechaCreacion = fechaCreacion;
         this.fechaModificacion = fechaModificacion;
         this.estado = estado;
+        this.categoria = categoria;
+        this.marca = marca;
+        this.unidadMedida = unidadMedida;
     }
 
     public long getId() {
@@ -105,7 +130,7 @@ public class Producto {
         this.imagen = imagen;
     }
 
-    public String  getFechaCreacion() {
+    public String getFechaCreacion() {
         return fechaCreacion;
     }
 
@@ -113,7 +138,7 @@ public class Producto {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public String  getFechaModificacion() {
+    public String getFechaModificacion() {
         return fechaModificacion;
     }
 
@@ -127,5 +152,29 @@ public class Producto {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    public Marca getMarca() {
+        return marca;
+    }
+
+    public void setMarca(Marca marca) {
+        this.marca = marca;
+    }
+
+    public UnidadMedida getUnidadMedida() {
+        return unidadMedida;
+    }
+
+    public void setUnidadMedida(UnidadMedida unidadMedida) {
+        this.unidadMedida = unidadMedida;
     }
 }

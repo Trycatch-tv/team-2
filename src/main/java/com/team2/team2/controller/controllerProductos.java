@@ -40,8 +40,6 @@ public class controllerProductos {
     @RequestMapping(value = "/save",method = RequestMethod.POST,produces="application/json")
     public @ResponseBody void save (@RequestBody Producto producto) {
 
-        System.out.printf("_______"+producto.getNombre());
-        System.out.printf("_______");
         this.interfazServiceProdutos.save(producto);
     }
 
