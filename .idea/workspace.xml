@@ -7,30 +7,13 @@
     <list default="true" id="985c0352-aff8-4ac2-b3cb-2c615c66a73c" name="Changes" comment="">
       <change afterPath="$USER_HOME$/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/clone/clone.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/encoding/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceCategoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceUnidadMedida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceCategoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceUnidadMedida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerUnidadMedida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Marca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/UnidadMedida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseCategoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseUnidadMedida.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/demo (1)/demo (1)/demo/src/main/java/com/example/demo/entities/Categoria.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/demo (1)/demo (1)/demo/src/main/java/com/example/demo/entities/Marca.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/team2/.idea/team2.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/IdeaProjects/ejemplo/ejemplo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProdutos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProdutos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerCategoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerCategoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/Service/ServiceProdutos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/Service/ServiceProdutos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/controller/controllerProductos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/controller/controllerProductos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Team2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Team2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/entities/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/entities/Producto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
