@@ -12,9 +12,6 @@
       <change afterPath="$USER_HOME$/Downloads/team2/.idea/team2.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/IdeaProjects/ejemplo/ejemplo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/Team2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Team2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/team2/team2/entities/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/team2/team2/entities/Producto.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
