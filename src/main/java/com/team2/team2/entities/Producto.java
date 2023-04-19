@@ -29,6 +29,7 @@ public class Producto {
     private String fechaModificacion;
     @Column(name = "estado")
     private String estado;
+
     //SECCION 3.1________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
 
 
@@ -62,12 +63,23 @@ public class Producto {
     //UNIDO AL OBJETO Users que es una entidad
     private UnidadMedida unidadMedida;
 
+    //SECCION 3.2________________________________CARDINALIDA O LLAVES FORENAEAS________________________________________________________________
+
+
+    //ManyToOne: DEFINICION  Many: muchas facturas (la clase facturas)
+    //ManyToOne: DEFINICION  One: un Usuario (la variable Users)
+    @ManyToOne
+    //COLUMNA LLAVE FORANES (FK)
+    @JoinColumn(name = "Producto_Procso")
+    //UNIDO AL OBJETO Users que es una entidad
+    private Proceso proceso;
+
     //SECCION 4__________________________________________CONTRUCTOR_______________________________________________________________
 
 
     public Producto(){};
 
-    public Producto(long id, String nombre, String descripcion, long cantidad, long precio, String imagen, String fechaCreacion, String fechaModificacion, String estado, Categoria categoria, Marca marca, UnidadMedida unidadMedida) {
+    public Producto(long id, String nombre, String descripcion, long cantidad, long precio, String imagen, String fechaCreacion, String fechaModificacion, String estado, Categoria categoria, Marca marca, UnidadMedida unidadMedida, Proceso proceso) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -80,6 +92,7 @@ public class Producto {
         this.categoria = categoria;
         this.marca = marca;
         this.unidadMedida = unidadMedida;
+        this.proceso = proceso;
     }
 
     public long getId() {
@@ -176,5 +189,13 @@ public class Producto {
 
     public void setUnidadMedida(UnidadMedida unidadMedida) {
         this.unidadMedida = unidadMedida;
+    }
+
+    public Proceso getProceso() {
+        return proceso;
+    }
+
+    public void setProceso(Proceso proceso) {
+        this.proceso = proceso;
     }
 }
