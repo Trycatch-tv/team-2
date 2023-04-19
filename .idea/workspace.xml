@@ -7,17 +7,12 @@
     <list default="true" id="985c0352-aff8-4ac2-b3cb-2c615c66a73c" name="Changes" comment="">
       <change afterPath="$USER_HOME$/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/clone/clone.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/encoding/node_modules/iconv-lite/.idea/iconv-lite.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/InterfazServiceProceso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/Service/ServiceProceso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/controller/controllerProceso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Proceso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/repositories/InterfazBaseProceso.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/demo (1)/demo (1)/demo/src/main/java/com/example/demo/entities/Categoria.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/demo (1)/demo (1)/demo/src/main/java/com/example/demo/entities/Marca.java" afterDir="false" />
       <change afterPath="$USER_HOME$/Downloads/team2/.idea/team2.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/IdeaProjects/ejemplo/ejemplo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/team2/team2/entities/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
